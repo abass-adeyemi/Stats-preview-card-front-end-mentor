@@ -1,0 +1,264 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: lavender;
+	padding-top: 15px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+/*  @font-face {
+	font-family: Inter;
+	src: url(https://fonts.google.com/specimen/Lexend+Deca); 
+} */
+
+@import url('https://fonts.google.com/specimen/Inter');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Inter', 'Lexend Deca', sans-serif;
+}
+
+.cardBackGround {
+	background-color: hsl(233, 47%, 7%);
+	/* border: 2px solid yellow; */
+	/* height: 100vh; */
+	padding: 100px 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	/* margin: 50px 50px; */
+	/* border: 2px solid red; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* width: 90%; */
+	padding: 0px 15px;
+}
+.businessGrow {
+	background-color: hsl(244, 38%, 16%);
+	/* max-width: 550px; */
+	max-height: auto;
+	width: 45%;
+
+	/* padding: 15px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 10px 15px 15px;
+	border-radius: 15px 0 0 15px;
+}
+
+.companyRating {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+	margin: 10px 30px;
+	text-align: left;
+}
+h1 {
+	color: hsl(0, 0%, 100%);
+	padding: 20px 45px 5px 15px;
+	margin: 10px 30px;
+	/* border: 1px solid yellowgreen; */
+	font-weight: 700;
+	line-height: 45px;
+}
+h1 > span {
+	color: hsl(277, 64%, 61%);
+}
+
+h3 {
+	color: hsl(0, 0%, 100%);
+	padding: 10px;
+	margin: 0;
+	font-weight: 700;
+}
+.comments {
+	color: hsla(0, 0%, 100%, 0.6);
+	padding: 5px 50px 10px 10px;
+	margin: 10px 25px 0px 25px;
+	/* border: 1px solid yellowgreen; */
+	font-size: 15px;
+	line-height: 20px;
+}
+.imageContainer {
+	width: 50%;
+	/* border: 1px solid red; */
+}
+.desktopView {
+	max-width: auto;
+	/* width: 100%; */
+	height: auto;
+	border-radius: 0 15px 15px 0;
+	/* border: 1px solid red; */
+}
+.mobileView {
+	display: none;
+	max-width: 100%;
+	height: auto;
+	border-radius: 15px 15px 0 0;
+	/* border: 1px solid red; */
+}
+
+.companyRating span {
+	color: hsla(0, 0%, 100%, 0.6);
+	text-transform: uppercase;
+	/* font-size: 15px; */
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	font-size: 12px;
+}
+/* designing for the mobile view */
+
+/* @media max: 1000px min: 550px {
+} */
+@media screen and (max-width: 1000px) and (min-width: 550px) {
+	.cardBackGround {
+		background-color: hsl(233, 47%, 7%);
+		/* border: 2px solid yellow; */
+		/* height: 100vh; */
+		padding: 100px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container {
+		/* margin: 50px 50px; */
+		/* border: 2px solid red; */
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		/* width: 90%; */
+		padding: 10px 0 0 0;
+	}
+
+	.businessGrow {
+		background-color: hsl(244, 38%, 16%);
+		/* max-width: 550px; */
+		max-height: auto;
+		width: 75%;
+		margin: 0;
+
+		/* padding: 15px; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px 10px 15px 15px;
+		border-radius: 0 0 15px 15px;
+	}
+
+	.imageContainer {
+		width: 75%;
+		/* border: 1px solid red; */
+		padding: 0;
+		margin: 0%;
+	}
+	.desktopView {
+		width: -webkit-fill-available;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		border-radius: 15px 15px 0 0;
+		/* border: 1px solid red; */
+	}
+}
+/* min; 549 */
+@media screen and (max-width: 549px) {
+	.cardBackGround {
+		background-color: hsl(233, 47%, 7%);
+		/* border: 2px solid yellow; */
+		padding: 100px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container {
+		/* margin: 50px 50px; */
+		/* border: 2px solid red; */
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		/* width: 90%; */
+		padding: 10px 0 10px 0;
+	}
+
+	.businessGrow {
+		background-color: hsl(244, 38%, 16%);
+		/* max-width: 550px; */
+		max-height: auto;
+		width: 95%;
+		margin: 0;
+
+		/* padding: 15px; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px 0px 15px 0;
+		border-radius: 0 0 15px 15px;
+		text-align: center;
+	}
+	h1 {
+		color: hsl(0, 0%, 100%);
+		padding: 10px 0px 10px 0px;
+		/* margin: 10px 10px; */
+		/* border: 1px solid yellowgreen; */
+		font-weight: 700;
+		line-height: 30px;
+	}
+	.comments {
+		color: hsla(0, 0%, 100%, 0.6);
+		padding: 5px 5px 5px 5px;
+		margin: 10px 25px 10px 25px;
+		text-align: center;
+		/* border: 1px solid yellowgreen; */
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.imageContainer {
+		width: 95%;
+		/* border: 1px solid red; */
+		padding: 0;
+		margin: 0%;
+	}
+	.desktopView {
+		display: none;
+	}
+
+	.mobileView {
+		display: flex;
+		max-width: 100%;
+		height: auto;
+		border-radius: 15px 15px 0 0;
+		/* border: 1px solid red; */
+	}
+	.companyRating {
+		display: flex;
+		flex-direction: column;
+		/* align-content: center; */
+		/* padding: 50px 0; */
+		text-align: center;
+		justify-content: space-between;
+		/* border: 2px solid red; */
+	}
+	.companyRating > div {
+		padding: 10px 0;
+		/* border: 2px solid red; */
+	}
+
+	h3 {
+		padding: 0px;
+	}
+}
